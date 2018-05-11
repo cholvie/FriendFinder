@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src= "https://code.jquery.com/jquery.js"></script>
+  <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- font glyphcons-->
+  <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- chosen logic-->
+  <link rel= "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+
+<body>
+    <div class= "container">
+        <h1>
+            <strong>Survey</strong>
+        </h1>
+
+        <hr>
+
+        <h3>
+            <strong>About You</strong>
+        </h3>
+
+        <h4>Name (Required)</h4>
+        
+        <input type="text" id="photo" class="form control" required>
+        
+        <h4>Enter a link to a photo of you. (Required)</h4>
+
+        <input type="text" id="photo" class="form control" required>
+        </hr>
+
+
+
+        <h2>
+            <strong>Questions</strong>
+        </h2>
+
+        <h3>
+            <strong>1</strong>
+        </h3>
+
+        <h4>
+            Your mind is always buzzing with unexplored ideas and plans.
+        </h4>
+
+        <select class="chosen-select" id="q1" style="display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style="width: 157px;" title id="q1_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>                
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+
+                <ul class="chosen-results">
+                    <li class= "active-result" data-option-array-index= "1" style>1 (Strongly Disagree)</li>
+                    <li class= "active-result" data-option-array-index= "2" style>2 (Disagree)</li>
+                    <li class= "active-result" data-option-array-index= "3" style>3 (Neutral)</li>
+                    <li class= "active-result" data-option-array-index= "4" style>4 (Agree)</li>
+                    <li class= "active-result" data-option-array-index= "5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>2</strong>
+        </h3>
+
+        <h4>
+            Generally speaking, you rely more on your experience than your imagination.
+        </h4>
+
+        <select class= "chosen-select" id= "q2" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>3</strong>
+        </h3>
+
+        <h4>
+            You find it easy to stay relaxed and focused even when there is some pressure.
+        </h4>
+
+        <select class= "chosen-select" id= "q3" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>4</strong>
+        </h3>
+
+        <h4>
+            You rarely do something just out of sheer curiosity.
+        </h4>
+
+        <select class= "chosen-select" id= "q4" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>5</strong>
+        </h3>
+
+        <h4>
+            People can rarely upset you.
+        </h4>
+
+        <select class= "chosen-select" id= "q5" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>6</strong>
+        </h3>
+
+        <h4>
+            It is often difficult for you to relate to other people’s feelings.
+        </h4>
+
+        <select class= "chosen-select" id= "q6" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+        
+        <h3>
+            <strong>7</strong>
+        </h3>
+
+        <h4>
+            In a discussion, truth should be more important than people’s sensitivities.
+        </h4>
+
+        <select class= "chosen-select" id= "q7" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>8</strong>
+        </h3>
+
+        <h4>
+            You rarely get carried away by fantasies and ideas.
+        </h4>
+
+        <select class= "chosen-select" id= "q8" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>9</strong>
+        </h3>
+
+        <h4>
+            You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        </h4>
+
+        <select class= "chosen-select" id= "q9" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <h3>
+            <strong>10</strong>
+        </h3>
+
+        <h4>
+            You feel more energetic after spending time with a group of people.
+        </h4>
+
+        <select class= "chosen-select" id= "q10" style= "display: none;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option vaule="2">2 (Disagree)</option>
+            <option vaule="3">3 (Neutral)</option>
+            <option vaule="4">4 (Agree)</option>
+            <option vaule="5">5 (Strongly Agree)</option>
+        </select>
+
+        <div class= "chosen-container chosen-container-single" style= "width: 157px;" title id= "q2_chosen">
+            <a class= "chosen-single chosen-default">
+                <span>Select an Option</span>
+                <div>
+                    <b></b>
+                </div>
+            </a>
+
+            <div class= "chosen-drop">
+                <div class= "chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class= "chosen-results"></ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!--submit button-->
+        <button type= "submit" class= "btn btn-primary btn-lg btn-block" id= "submit">
+            <i class= "fa fa-check-circle" aria-hidden= "true">
+            </i>
+            Submit
+        </button>
+
+        <footer class= "footer">
+            <div class= "container">
+                <p>
+                </p>                
+            </div> 
+        </footer>  
+    </div>
+
+    <!--modal-->
+
+    <div id= "results-modal" class= "modal fade" role= "dialog">
+        <div class= "modal-dialog">
+
+            <!--modal content-->
+            <div class= "modal -content">
+                <div class= "modal-header">
+                    <button type= "button" class="close" data-dismiss= "modal">x</button>
+                    <h2 class= "modal-title">
+                        <strong>Best Match</strong>
+                    </h2>
+                </div>
+
+                <div class= "modal-body">
+                    <h2 id= "match name">                        
+                    </h2>
+                    <img id= "match-img" src= "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt>
+                </div>
+
+                <div class= "modal-footer">
+                    <button type= "button" class="btn btn-default" data-dismiss= "modal">Close</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type= "text/javascript">
+
+    </script>
+</body>
+</html>

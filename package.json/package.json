@@ -1,0 +1,12 @@
+{
+  "name": "body-parser",
+  "version": "1.0.0",
+  "description": "npm packages",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christie",
+  "license": "ISC"
+}
+
